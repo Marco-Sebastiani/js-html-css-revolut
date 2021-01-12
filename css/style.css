@@ -7,7 +7,7 @@
 .container{
     max-width: 1240px;
     margin: auto;
-    background-color: green;
+    /* background-color: green; */
 }
 
 ul{
@@ -19,6 +19,17 @@ ul{
 
 ul li{
     cursor: pointer;
+    align-self: center;
+    color: rgba(179, 178, 178, 0.623);
+}
+
+ul li:hover{
+    color: #000;
+}
+
+.img-logo{
+
+    width: 130px;
 }
 
 .box-dropdown{
@@ -27,34 +38,30 @@ ul li{
     justify-content: center;
 }
 
+.box-dropdown ul li{
+    padding: 0 4px;
+    line-height: 2.2;
+    font-size: 15px;
+    text-transform: capitalize; 
+}
+
 .menu-drop{
+    display:none;
     position: absolute;
+    width: 175px;
     padding: 5px;
-    top: 25px;
+    top: 18px;
     left: 50%;
     transform: translateX(-50%);
     border: 1px solid rgba(0, 0, 0, 0.6);
     flex-direction: column;
     background-color: white;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
-    display:none;
 }
 
 .menu-drop.active{
     display: block;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 button{
     padding: 10px 15px;
@@ -63,12 +70,29 @@ button{
     background-color: #eb008d;
     border: 0;
     border-radius: 10px;
+    cursor: pointer;
 }
 
+.center{
+    text-align: center;
+}
+.black{
+    color:#000;
+}
 
+.upper-case{
+    text-transform: uppercase;
+}
 
-
-
+/* *****debug**** */
 .none{
     display: none;
+}
+
+.show{
+    display: block;
+}
+
+.justify{
+    text-align: justify;
 }
