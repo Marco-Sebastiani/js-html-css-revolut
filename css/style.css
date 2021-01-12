@@ -17,6 +17,10 @@ ul{
     padding: 20px 0;
 }
 
+ul li{
+    cursor: pointer;
+}
+
 .box-dropdown{
     position: relative;
     display: flex;
@@ -26,16 +30,19 @@ ul{
 .menu-drop{
     position: absolute;
     padding: 5px;
-    top: 40px;
+    top: 25px;
     left: 50%;
     transform: translateX(-50%);
     border: 1px solid rgba(0, 0, 0, 0.6);
     flex-direction: column;
     background-color: white;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+    display:none;
 }
 
-
+.menu-drop.active{
+    display: block;
+}
 
 
 
