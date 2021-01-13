@@ -107,3 +107,33 @@ i.left{
 .justify{
     text-align: justify;
 }
+
+
+.beta::after{
+    display: block;
+    position: absolute;
+    content: 'beta';
+    color: #eb008d;
+    font-size: 11px;
+    top: 30%;
+    left: 25%;
+    text-transform: lowercase;
+}
+
+
+.nuovo::after,
+.nuovo-due::after{
+    display: block;
+    position: absolute;
+    content: 'Nuovo';
+    color: #eb008d;
+    font-size: 11px;
+    top: 81%;
+    left: 45%;
+}
+
+.nuovo-due::after{
+    top: 88%;
+    left: 45%;
+}
+
